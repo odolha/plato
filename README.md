@@ -1,5 +1,26 @@
 # plato
 
+**This is a fork of the original**
+
+FOR ES6 (EcmaScript2015) source file compatibility.
+
+It uses a fork of the escomplex-js module, and passes it custom ES options.
+
+In addition it allows setting the 'ignoreDecorators' option, which when set true removes all ES7+ (non-standard) decorators from your source files before handing them to the parser, to avoid errors due to them.
+The analysis should be good enough even so.
+
+	options.ecmaOptions= {
+		ecmaVersion: 6, 			// the version preset to use
+		sourceType: 'module',		// module or script
+		tolerant: true,				// whether tolerant mode is enabled
+		ecmaFeatures: { ... }		// specific list of features to enable/disable
+		
+		ignoreDecorators: true		// special flag to use to tell plato to remove all decorators before parsing
+	}
+	
+	plato.inspect(files, outputFolder, options)
+
+
 [![Build Status](https://travis-ci.org/es-analysis/plato.png?branch=master)](https://travis-ci.org/es-analysis/plato)
 
 [![Codeship Status for es-analysis/plato](https://www.codeship.io/projects/479c7b90-f024-0131-6150-66d8ca7dad4d/status)](https://www.codeship.io/projects/27326)

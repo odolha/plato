@@ -2,7 +2,7 @@
   "name": "plato",
   "description": "JavaScript source analysis and visualizer",
   "version": "1.4.0",
-  "homepage": "https://github.com/es-analysis/plato",
+  "homepage": "https://github.com/odolha/plato",
   "author": {
     "name": "Jarrod Overson",
     "email": "jsoverson@gmail.com",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/es-analysis/plato.git"
+    "url": "git://github.com/odolha/plato.git"
   },
   "bugs": {
-    "url": "https://github.com/es-analysis/plato/issues"
+    "url": "https://github.com/odolha/plato/issues"
   },
   "bin": "bin/plato",
   "licenses": [
@@ -47,7 +47,7 @@
     "analyze"
   ],
   "dependencies": {
-    "escomplex-js": "~1.2.0",
+    "escomplex-js": "git+https://github.com/odolha/escomplex-js.git",
     "fs-extra": "^0.3.2",
     "glob": "~4.4.1",
     "jshint": "~2.6.3",
